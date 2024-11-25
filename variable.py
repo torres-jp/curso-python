@@ -91,3 +91,34 @@
 # print(m)
 # print(n)
 # print(o)
+
+### use de print y salidas
+
+# txt = 'Curso '
+# txt2 = 'de '
+# txt3 = 'python '
+
+# num1 = 2
+# num2 = 4
+# num3 = 6
+
+# print(txt + txt2 +txt3) # Usando una coma (,) funciona igual solo agrega un espacio mas
+
+# print(num1+num2+num3)
+
+# print(num1 , txt3) # Usando coma (,) se puede concatenar datos numericos y string
+
+
+### Variables globales vs variables de Scope
+variableGlobal = "Esta variable esta disponible para todo el programa"
+
+def function():
+    variableDeScope = "Esta variable solo funciona dentro de la funcion"
+    variableGlobal = "Este valor es solo para dentro de la funcion , no afecta al valor de afuera"
+    print(variableGlobal)
+    print(variableDeScope)
+
+function()
+
+print(variableGlobal)
+# print(variableDeScope) # Indefinido porque solo existe dentro de la funcion
