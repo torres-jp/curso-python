@@ -45,4 +45,25 @@ cruzar = semaforo == "Verde" or semaforo == "Amarillo" # si usamos OR debe cumpl
 
 
 verdad = True
-print(not verdad)
+# print(not verdad)
+ 
+
+## operador de identidad  (is , is not)
+nombre = "jhon"
+profesor = "jhon"
+
+sonIguales = nombre is profesor # compara igualdad
+
+alumno = "peter"
+sonDistintos = profesor is not alumno # compara diferencia
+
+
+## operadores de pertenencia (in, not in)
+
+palabra = "mundo"
+palabra2 = "mercurio"
+texto = "hola mundo"
+pertenece = palabra in texto
+
+noPertenece = palabra2 not in texto
+print(noPertenece)
