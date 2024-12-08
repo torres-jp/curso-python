@@ -30,3 +30,5 @@ IDE/Editor: VSCode, PyCharm, o cualquier otro de tu preferencia.
  Proyectos Finales
 🌱 Notas
 Este repositorio es un registro de mi proceso de aprendizaje. Puede haber errores o código mejorable, ¡así que cualquier feedback es bienvenido!
+
+6.22
