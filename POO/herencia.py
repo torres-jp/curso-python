@@ -10,22 +10,31 @@ class Personajes:
 
 ## Clase heredada
 class Superheroe(Personajes):
-    def salvar_el_dia(self):
-        print(f'{self.nombre} esta salvando el dia usando su  {self.poder}')
+    def __init__(self, nombre, poder,ciudad):
+        super().__init__(nombre, poder) # Usamos super para pasarle informacion al padre.
+        self.ciudad = ciudad
+
+    def salvar_la_ciudad(self):
+        print(f'{self.nombre} esta salvando la {self.ciudad}  usando su  {self.poder}')
 
 class Villano(Personajes):
+    def __init__(self, nombre, poder,archienemigo):
+        super().__init__(nombre, poder)
+        self.archienemigo = archienemigo
+
+
     def plan_malvado(self):
-        print(f'Cuidado {self.nombre} esta haciendo el mal usando su poder {self.poder}')
+        print(f'Cuidado {self.nombre} esta haciendo el mal contra {self.archienemigo} usando su poder {self.poder}')
 
 
 
-heroe = Superheroe('Captian comando', 'lanzallamas')
-villano = Villano('Blood', 'Super-velocidad')
+heroe = Superheroe('Captian Comando', 'lanzallamas', 'Metro-city')
+villano = Villano('Blood', 'Super-velocidad', 'Capitan Comando')
 
 
 heroe.presentarse()
 villano.presentarse()
 
 
-heroe.salvar_el_dia()
+heroe.salvar_la_ciudad()
 villano.plan_malvado()
